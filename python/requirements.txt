@@ -1,0 +1,12 @@
+scanpy
+anndata
+numpy
+pandas
+scipy
+scikit-learn
+umap-learn
+igraph
+matplotlib
+scikit-image
+fastapi
+uvicorn[standard]
