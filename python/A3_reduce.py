@@ -2,7 +2,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import scanpy as sc
-from provenance import record
+from A4_provenance import record
 
 adata = sc.read_h5ad("out/01_qc.h5ad")
 

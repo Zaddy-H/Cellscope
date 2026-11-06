@@ -3,7 +3,7 @@ import matplotlib
 matplotlib.use("Agg")                     # draw to files, not to a window
 import matplotlib.pyplot as plt
 import scanpy as sc
-from provenance import record
+from A4_provenance import record
 
 os.makedirs("out", exist_ok=True)
 adata = sc.datasets.pbmc3k()

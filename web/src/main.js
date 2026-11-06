@@ -47,7 +47,7 @@ async function loadCells() {
   // Vite answers a missing file with index.html (HTTP 200), so check the content type too.
   const res = await fetch('/data/manifest.json');
   if (!res.ok || !res.headers.get('content-type')?.includes('json')) {
-    throw new Error('Could not load /data/manifest.json - run python run_pipeline.py');
+    throw new Error('Could not load /data/manifest.json - run python A6_run_pipeline.py');
   }
   const manifest = await res.json();
   const positions = await loadF32('/data/' + manifest.embeddings.pca.file);

@@ -1,7 +1,7 @@
 import json, os, shutil
 import numpy as np
 import scanpy as sc
-from provenance import record
+from A4_provenance import record
 
 OUT = "../web/public/data"
 os.makedirs(OUT, exist_ok=True)
