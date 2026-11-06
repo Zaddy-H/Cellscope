@@ -11,9 +11,9 @@ sc.pp.normalize_total(adata, target_sum=TARGET_SUM)   # every cell sums to 10,00
 sc.pp.log1p(adata)                             # log(1 + x)
 adata.raw = adata                              # keep ALL genes, log-normalised, for later labs
 
-# ---- how many highly variable genes? ----
+# how many highly variable genes?
 N_HVG = 2000
-# ----------------------------------------------------
+
 sc.pp.highly_variable_genes(adata, n_top_genes=N_HVG)
 adata = adata[:, adata.var["highly_variable"]].copy()
 
