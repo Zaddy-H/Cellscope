@@ -19,12 +19,12 @@ for ax, col in zip(axes, ["n_genes_by_counts", "total_counts", "pct_counts_mt"])
 fig.tight_layout()
 fig.savefig("out/qc_before.png", dpi=120)
 
-# ---- look at out/qc_before.png and decide on thresholds ----
+
 MIN_GENES = 200            # cells with fewer detected genes are removed
 MAX_GENES = 2500           # cells with more detected genes are removed (possible doublets)
 MAX_PCT_MT = 5.0           # cells with a larger mitochondrial fraction are removed
 MIN_CELLS_PER_GENE = 3     # genes seen in fewer cells are removed
-# -----------------------------------------------------------------------
+
 
 n_before = adata.n_obs
 keep = (
