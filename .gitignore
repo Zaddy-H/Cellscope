@@ -3,3 +3,4 @@ python/data/
 python/out/
 web/node_modules/
 web/public/data/
+__pycache__/
